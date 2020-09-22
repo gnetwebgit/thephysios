@@ -6,6 +6,8 @@
 
 $theme-colors: (
   "primary": #d04471,
+  "secondary": #8d54a7,
+  "success": #80ba27,
 );
 
 $spacer: 1rem;
@@ -33,6 +35,8 @@ $spacers: (
 $body-bg: #fff;
 $body-color: #444;
 $primary: #e35583;
+$secondary: #8d54a7;
+$success: #80ba27;
 // Grid
 $grid-columns:      12;
 $grid-gutter-width: 30px;
