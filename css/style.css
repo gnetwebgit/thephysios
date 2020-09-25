@@ -382,7 +382,7 @@ img {
 
 .section-content {
   max-width: 580px;
-  margin-top: 180px;
+  margin-top: 200px;
   margin-bottom: 0px;
   display: inline-block;
   position: relative;
@@ -766,17 +766,26 @@ img {
       text-align: center;
       color: #303030;
       margin-bottom: 30px; }
-  .team .icons {
-    text-align: center; }
-    .team .icons span {
-      margin-right: 30px; }
+    .team .team-item ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin-bottom: 50px;
+      justify-content: center;
+      font-weight: 600;
+      margin-top: 30px; }
+      .team .team-item ul li {
+        font-size: 18px;
+        padding-right: 30px;
+        color: #303030; }
   .team .team-content {
-    co: red; }
+    text-align: center; }
     .team .team-content .card {
       margin-bottom: 30px;
       border-style: none;
       box-shadow: 1px 1px 13px 5px #f3f0f0;
-      border-radius: 8px; }
+      border-radius: 8px;
+      height: calc(100% - 30px); }
       .team .team-content .card:hover {
         box-shadow: 1px 1px 22px 9px #ababab; }
       .team .team-content .card img {
@@ -784,6 +793,8 @@ img {
         border-radius: 8px 8px 0 0; }
       .team .team-content .card .card-body {
         padding: 25px 50px 25px 30px; }
+        .team .team-content .card .card-body span {
+          font-size: 13px; }
         .team .team-content .card .card-body h4 {
           font-size: 26px;
           font-weight: normal;
@@ -791,16 +802,27 @@ img {
           margin-bottom: 15px; }
         .team .team-content .card .card-body p {
           font-size: 16px;
-          font-weight: normal;
           color: #303030;
-          margin-bottom: 15px;
-          text-align: left; }
-        .team .team-content .card .card-body h6 {
-          font-size: 14px;
-          font-weight: 300;
-          color: #303030; }
+          margin-bottom: 50px;
+          text-align: left;
+          font-weight: 500; }
+        .team .team-content .card .card-body ul {
+          list-style: none;
+          padding: 0;
+          display: flex; }
+          .team .team-content .card .card-body ul li {
+            font-size: 14px;
+            color: #303030;
+            padding-right: 4px; }
         .team .team-content .card .card-body .icons {
-          co: red; }
+          position: absolute;
+          bottom: 30px; }
+          .team .team-content .card .card-body .icons span {
+            co: red; }
+    .team .team-content h5 {
+      font-size: 19px;
+      color: #303030;
+      margin-top: 50px; }
 
 .join {
   background: #f7f7f7;
@@ -908,6 +930,8 @@ img {
         font-size: 16px;
         color: #303030;
         margin-top: 30px; }
+        .profile .resources .resources-item h5:hover {
+          text-decoration: underline; }
 
 .footer-section {
   background: #303030; }
@@ -1019,19 +1043,23 @@ img {
       border: none;
       box-shadow: 1px 1px 12px #dfdfdf;
       margin-bottom: 30px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      height: calc(100% - 30px); }
       .service .service-item .card:hover {
         box-shadow: 1px 1px 22px 12px #e3e3e3; }
       .service .service-item .card .card-body {
-        co: red; }
+        padding: 30px; }
         .service .service-item .card .card-body h4 {
           font-size: 26px;
           font-weight: normal;
-          color: #303030; }
+          color: #303030;
+          margin-bottom: 50px; }
         .service .service-item .card .card-body a {
           font-size: 18px;
           font-weight: 300;
-          color: #303030; }
+          color: #303030;
+          position: absolute;
+          bottom: 30px; }
           .service .service-item .card .card-body a:hover {
             text-decoration: underline; }
 
@@ -1070,8 +1098,8 @@ img {
         margin-bottom: 16px; }
       .our-team .item-image .content h6 {
         font-size: 18px;
-        font-weight: 300;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        font-weight: 500; }
       .our-team .item-image .content ul {
         list-style: none;
         padding: 0;
@@ -1137,6 +1165,109 @@ img {
 
 .contact {
   padding-top: 130px; }
+
+.service-sec {
+  background: url("../images/service-bg-1.png") no-repeat bottom center/cover; }
+  .service-sec .section-content {
+    margin-top: 250px; }
+    .service-sec .section-content h1:before {
+      background: #8d54a7; }
+    .service-sec .section-content p {
+      font-size: 26px;
+      line-height: 1.4; }
+
+.profile .lab {
+  padding-top: 100px; }
+  .profile .lab h3:before {
+    background: #8d54a7; }
+
+.run-lab {
+  padding: 35px 0 60px 0; }
+  .run-lab .item {
+    color: #fff;
+    padding: 61px 90px; }
+    .run-lab .item p {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 25px; }
+    .run-lab .item ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 25px; }
+      .run-lab .item ul li {
+        font-size: 20px;
+        font-style: italic; }
+
+.blog-section {
+  background: url("../images/blog-bg.png") no-repeat center center/cover; }
+  .blog-section h1:before {
+    background: #f39600; }
+  .blog-section p {
+    margin-bottom: 70px; }
+
+.sign h3:before {
+  background: #f39600; }
+
+.news {
+  co: red; }
+  .news h3:before {
+    background: #f39600; }
+
+.Video {
+  padding: 50px 0 120px 0; }
+
+.blog-detail {
+  background: url("../images/blog-bg.png") no-repeat center center/cover;
+  padding: 250px; }
+
+.Article-title {
+  background: #f7f7f7; }
+  .Article-title h1 {
+    font-size: 70px;
+    font-weight: 300;
+    position: relative;
+    text-align: center; }
+    .Article-title h1:before {
+      content: "";
+      width: 62px;
+      height: 2px;
+      position: absolute;
+      background: #e35583;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0); }
+  .Article-title .content {
+    max-width: 670px;
+    margin: 0 auto; }
+    .Article-title .content .blandit {
+      text-align: center;
+      color: #303030;
+      font-size: 20px; }
+    .Article-title .content .magnis {
+      co: red; }
+      .Article-title .content .magnis p {
+        co: red; }
+      .Article-title .content .magnis h2 {
+        co: red; }
+    .Article-title .content p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: 300; }
+    .Article-title .content h6 {
+      co: red; }
+    .Article-title .content h4 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      font-weight: 300; }
+    .Article-title .content .image {
+      margin: 50px 0 70px 0; }
+      .Article-title .content .image img {
+        co: red; }
+      .Article-title .content .image h6 {
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #303030; }
 
 @media print {
   .container {

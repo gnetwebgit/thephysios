@@ -8,6 +8,7 @@ $theme-colors: (
   "primary": #d04471,
   "secondary": #8d54a7,
   "success": #80ba27,
+  "warning": #f39600,
 );
 
 $spacer: 1rem;
@@ -37,6 +38,8 @@ $body-color: #444;
 $primary: #e35583;
 $secondary: #8d54a7;
 $success: #80ba27;
+$warning: #f39600;
+
 // Grid
 $grid-columns:      12;
 $grid-gutter-width: 30px;

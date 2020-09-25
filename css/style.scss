@@ -114,7 +114,7 @@ img{
 }
 .section-content{
   max-width: 580px;
-  margin-top: 180px;
+  margin-top: 200px;
   margin-bottom: 0px;
   display: inline-block;
   position: relative;
@@ -596,20 +596,29 @@ img{
       color: #303030;
       margin-bottom: 30px;
     }
-  }
-  .icons{
-    text-align: center;
-    span{
-      margin-right: 30px;
+    ul{
+      list-style: none;
+      padding: 0;
+      display: flex;
+      margin-bottom: 50px;
+      justify-content: center;
+      font-weight: 600;
+      margin-top: 30px;
+      li{
+        font-size: 18px;
+        padding-right: 30px;
+        color: #303030;
+      }
     }
   }
   .team-content{
-    co:red;
+    text-align: center;
     .card{
       margin-bottom: 30px;
       border-style: none;
       box-shadow: 1px 1px 13px 5px #f3f0f0;
       border-radius: 8px;
+      height: calc(100% - 30px);
       &:hover{
         box-shadow: 1px 1px 22px 9px #ababab;
       }
@@ -619,6 +628,9 @@ img{
       }
       .card-body{
         padding: 25px 50px 25px 30px;
+        span{
+          font-size: 13px;
+        }
         h4{
           font-size: 26px;
           font-weight: normal;
@@ -627,20 +639,34 @@ img{
         }
         p{
           font-size: 16px;
-          font-weight: normal;
           color: #303030;
-          margin-bottom: 15px;
+          margin-bottom: 50px;
           text-align: left;
+          font-weight: 500;
         }
-        h6{
-          font-size: 14px;
-          font-weight: 300;
-          color: #303030;
+        ul{
+          list-style: none;
+          padding: 0;
+          display: flex;
+          li{
+            font-size: 14px;
+            color: #303030;
+            padding-right: 4px;
+          }
         }
         .icons{
-          co:red;
+          position: absolute;
+          bottom: 30px;
+          span{
+            co:red;
+          }
         }
       }
+    }
+    h5{
+      font-size: 19px;
+      color: #303030;
+      margin-top: 50px;
     }
   }
 }
@@ -773,6 +799,9 @@ img{
         font-size: 16px;
         color: #303030;
         margin-top: 30px;
+        &:hover{
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -914,20 +943,24 @@ img{
       box-shadow: 1px 1px 12px #dfdfdf;
       margin-bottom: 30px;
       transition: 0.5s;
+      height: calc(100% - 30px);
       &:hover{
         box-shadow: 1px 1px 22px 12px #e3e3e3;
       }
       .card-body{
-        co:red;
+        padding: 30px;
         h4{
           font-size: 26px;
           font-weight: normal;
           color: #303030;
+          margin-bottom: 50px;
         }
         a{
           font-size: 18px;
           font-weight: 300;
           color: #303030;
+          position: absolute;
+          bottom: 30px;
           &:hover{
             text-decoration: underline;
           }
@@ -982,8 +1015,8 @@ img{
       }
       h6{
         font-size: 18px;
-        font-weight: 300;
         margin-bottom: 15px;
+        font-weight: 500;
       }
       ul{
         list-style: none;
@@ -1070,6 +1103,149 @@ img{
 .contact{
   padding-top: 130px;
 }
+.service-sec{
+  background: url("../images/service-bg-1.png") no-repeat bottom center/cover;
+  .section-content{
+    margin-top: 250px;
+    h1{
+      &:before{
+        background: $secondary;
+      }
+    }
+    p{
+      font-size: 26px;
+      line-height: 1.4;
+    }
+  }
+}
+.profile{
+  .lab{
+    padding-top: 100px;
+    h3{
+      &:before{
+        background: $secondary;
+      }
+    }
+  }
+}
+.run-lab{
+  padding: 35px 0 60px 0;
+  .item{
+    color: #fff;
+    padding: 61px 90px;
+    p{
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 25px;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin-bottom: 25px;
+      li{
+        font-size: 20px;
+        font-style: italic;
+      }
+    }
+  }
+}
+.blog-section{
+  background: url("../images/blog-bg.png") no-repeat center center/cover;
+  h1{
+    &:before{
+      background: $warning;
+    }
+  }
+  p{
+    margin-bottom: 70px;
+  }
+}
+.sign{
+  h3{
+    &:before{
+      background: $warning;
+    }
+  }
+}
+.news{
+  co:red;
+  h3 {
+    &:before {
+      background: $warning;
+    }
+  }
+}
+.Video{
+  padding: 50px 0 120px 0;
+}
+.blog-detail{
+  background: url("../images/blog-bg.png") no-repeat center center/cover;
+  padding: 250px;
+}
+.Article-title{
+  background: #f7f7f7;
+  h1{
+    font-size: 70px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    &:before{
+      content: "";
+      width: 62px;
+      height: 2px;
+      position: absolute;
+      background: $primary;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+  .content{
+    max-width: 670px;
+    margin: 0 auto;
+    .blandit{
+      text-align: center;
+      color: #303030;
+      font-size: 20px;
+    }
+    .magnis{
+      co:red;
+      p{
+        co:red;
+      }
+      h2{
+        co:red;
+      }
+    }
+    p{
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    h6{
+      co:red;
+    }
+    h4{
+      font-size: 40px;
+      margin-bottom: 30px;
+      font-weight: 300;
+    }
+    .image{
+      margin: 50px 0 70px 0;
+      img{
+        co:red;
+      }
+      h6{
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #303030;;
+      }
+    }
+  }
+}
+
+
 
 
 
