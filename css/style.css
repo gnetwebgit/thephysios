@@ -647,19 +647,19 @@ img {
         font-size: 15px;
         font-weight: 400; }
 
-.section-5 {
+.location-section {
   background: #1d2125;
   padding: 100px 0 65px 0; }
-  .section-5 .section-5-item {
+  .location-section .content-item {
     color: #ffff;
     padding: 0 50px 0 50px; }
-    .section-5 .section-5-item h3 {
+    .location-section .content-item h3 {
       font-size: 50px;
       font-weight: 300;
       color: #ffff;
       position: relative;
       margin-bottom: 50px; }
-      .section-5 .section-5-item h3:before {
+      .location-section .content-item h3:before {
         content: "";
         width: 70px;
         height: 3px;
@@ -667,33 +667,33 @@ img {
         background: #e35583;
         bottom: -15px;
         left: 0px; }
-    .section-5 .section-5-item address {
+    .location-section .content-item address {
       margin-bottom: 35px; }
-      .section-5 .section-5-item address h5 {
+      .location-section .content-item address h5 {
         font-size: 20px;
         font-weight: 300; }
-      .section-5 .section-5-item address span {
+      .location-section .content-item address span {
         font-size: 20px;
         font-weight: 300; }
-      .section-5 .section-5-item address a {
+      .location-section .content-item address a {
         color: #d04471;
         padding-left: 10px; }
-    .section-5 .section-5-item img {
+    .location-section .content-item img {
       cp: red; }
-  .section-5 .section-5-map {
+  .location-section .content-map {
     padding: 0 50px 0 50px; }
-    .section-5 .section-5-map .heading {
+    .location-section .content-map .heading {
       display: flex;
       color: #fff;
       padding: 35px 0; }
-      .section-5 .section-5-map .heading i {
+      .location-section .content-map .heading i {
         font-size: 24px;
         margin-right: 26px; }
-      .section-5 .section-5-map .heading h4 {
+      .location-section .content-map .heading h4 {
         font-size: 20px;
         font-weight: normal;
         margin-right: 15px; }
-        .section-5 .section-5-map .heading h4:last-child {
+        .location-section .content-map .heading h4:last-child {
           padding-left: 290px;
           text-decoration: underline; }
 
